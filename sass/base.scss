@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    LOADER
+------------------------------------------------------------------------------------------------------------------------*/
+.conteneur_globale{
+    opacity: 0;
+    animation: 1s ease-in-out 2.5s 1 forwards opacityBody;
+    background-color: white;
+}
+
+.lettre--1{
+    animation-delay: .1s;
+}
+.lettre--3{
+    animation-delay: .1s;
+}
+.lettre--5{
+    animation-delay: .1s;
+}
+.lettre--7{
+    animation-delay: .1s;
+}
+
+
+.conteneur_loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    top: 35%;
+    border-radius: 50%;
+    animation: 1s ease-in-out 2s 1 forwards opacityLoader;
+    &__texte{
+        display: flex;
+        font-size: 3em;
+        @media only screen and (min-width: $min-tab) {
+            font-size: 4em;
+        }
+        p{
+            animation: 1s ease-in-out infinite alternate-reverse translateLetter;
+            font-family: "Shrikhand", cursive;
+            margin: 0;
+        }
+        .lettre--1{
+            animation-delay: .1s;
+        }
+        .lettre--3{
+            animation-delay: .1s;
+        }
+        .lettre--5{
+            animation-delay: .1s;
+        }
+        .lettre--7{
+            animation-delay: .1s;
+        }
+        
+    }
+    &__bar{
+        width: 280px;
+        height: 30px;
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid black;
+        box-shadow: $shadow;
+        margin-top: 10px;
+        @media only screen and (min-width: $min-tab) {
+            width: 350px;
+            height: 35px;
+            border: 2px solid black;
+        }
+        &__progression{
+            background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
+            width: 100%;
+            height: 100%;
+            transform: scaleX(0);
+            animation: 2s ease-in-out 0s 1 forwards loaderBar;
+            transform-origin: left center;
+        }
+    }
+}
+// Animation Barre de chargement
+@keyframes loaderBar {
+    0%{
+        transform: scaleX(0);
+    };
+    20%{
+        transform: scaleX(0.32);
+    }
+    48%{
+        transform: scaleX(0.61);
+    }
+    72%{
+        transform: scaleX(0.87);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+// Animation Réduction de l'opacité du Loader
+@keyframes opacityLoader {
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+}
+
+// Animation Augmentation de l'opacité du Loader
+@keyframes opacityBody {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+// Animation Mouveaument des lettres de Ohmyfood
+@keyframes translateLetter {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(15px);
+    }
+    
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    FOOTER
+------------------------------------------------------------------------------------------------------------------------*/
+footer {
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    div {
+        margin: 10px auto;
+        width: 90%;
+        i {
+            margin-right: 10px;
+        }
+        h2 {
+            font-weight: normal;
+            font-family: "Shrikhand", cursive;
+            margin: 10px 0 10px 0;
+        }
+
+        a {
+            color: white;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+}
