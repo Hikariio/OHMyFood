@@ -169,75 +169,7 @@ header {
     }
 }
 
-/*------------------------------------------------------------------------------------------------------------------------
-                                                    NAV
-------------------------------------------------------------------------------------------------------------------------*/
-nav {
-    font-weight: bold;
-    .nav_localisation {
-        display: flex;
-        justify-content: center;
-        background-color: darken($gris, 15);
-    }
-    .nav__conteneur_icone {
-        margin-right: 15px;
-    }
 
-    .bouton_gmap {
-        display: flex;
-        flex-direction: column-reverse;
-        .iframe_gmap {
-            overflow: hidden;
-            height: 0px;
-            transition: height 500ms ease-in-out;
-            iframe {
-                min-height: 100%;
-                width: 100%;
-            }
-        }
-        .gmap_bar {
-            height: 3px;
-            background-image: linear-gradient(rgb(128, 128, 128), 50%, darken(gray, 5));
-        }
-        label {
-            width: 75px;
-            height: 40px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-            color: white;
-            &:hover{
-                box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
-                background-image: radial-gradient(at 0% 5%, lighten($secondary-color, 3), 55%, lighten($primary-color, 3));
-            }
-            i {
-                padding: 10px;
-                width: 45px;
-                height: 15px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: transform .5s ease;
-            }
-        }
-        input {
-            -webkit-appearance: none;
-        }
-        #chk_gmap {
-            &:checked ~ .iframe_gmap {
-                height: 300px;
-            }
-            &:checked + label i {
-                transform: rotate(-180deg);
-            }
-        }
-
-    }
-}
 
 /*------------------------------------------------------------------------------------------------------------------------
                                                     PRESENTATION
