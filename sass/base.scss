@@ -58,6 +58,7 @@ a {
         @media only screen and (min-width: $min-tab) {
             font-size: 4em;
         }
+        
         p{
             animation: 1s ease-in-out infinite alternate-reverse translateLetter;
             font-family: "Shrikhand", cursive;
@@ -76,6 +77,9 @@ a {
             animation-delay: .1s;
         }
         
+    }
+    nav {
+        z-index: 1;
     }
     &__bar{
         width: 280px;
