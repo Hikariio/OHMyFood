@@ -9,7 +9,9 @@ a {
 }
 
 p,
-a {
+a,
+h2,
+h3 {
     font-family: "Roboto", sans-serif;
 }
 
@@ -68,6 +70,10 @@ header {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     RESTAURANT
 ------------------------------------------------------------------------------------------------------------------------*/
+.section_restaurant{
+    background-color: $gris;
+    padding-top: 2px;
+}
 .menu {
     margin-top: -75px;
     padding-bottom: 50px;
@@ -198,6 +204,7 @@ header {
                 .menu__conteneur__plat__choix__selec i{
                     transform: rotate(360deg);
                 }
+
             }
         }
     }

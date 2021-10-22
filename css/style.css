@@ -44,21 +44,20 @@ header .conteneur_logo__image {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     NAV
 ------------------------------------------------------------------------------------------------------------------------*/
-.nav__conteneur_icone {
+.nav_localisation {
   display: flex;
   justify-content: center;
 }
 
-.titrecentre {
-  display: flex;
-  justify-content: center;
+.nav__conteneur_icone {
+  padding-right: 10px;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
                                                     PRESENTATION
 ------------------------------------------------------------------------------------------------------------------------*/
 .conteneur_presentation {
-  background-color: #f2f2f2;
+  background-color: #dad8d8;
 }
 
 .presentation {
@@ -113,7 +112,7 @@ header .conteneur_logo__image {
   margin: 10px auto 25px auto;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: #f2f2f2;
+  background-color: #dad8d8;
 }
 .conteneur_fonctionnement .etape_fonctionnement:hover {
   background-color: #e4d5f6;
@@ -261,7 +260,7 @@ header .conteneur_logo__image {
   .conteneur_main {
     display: flex;
     justify-content: space-between;
-    background-color: #f2f2f2;
+    background-color: #dad8d8;
     margin-top: -48px;
   }
 
@@ -650,7 +649,9 @@ a {
 }
 
 p,
-a {
+a,
+h2,
+h3 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -709,10 +710,15 @@ header .conteneur_logo__image {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     RESTAURANT
 ------------------------------------------------------------------------------------------------------------------------*/
+.section_restaurant {
+  background-color: #dad8d8;
+  padding-top: 2px;
+}
+
 .menu {
   margin-top: -75px;
   padding-bottom: 50px;
-  background-color: #f2f2f2;
+  background-color: #dad8d8;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   height: auto;
