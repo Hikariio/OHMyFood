@@ -14,3 +14,24 @@ $min-width-tab:600px;
 $min-width-landscape-tab:801px;
 $max-width-landscape-tab:1024px;
 
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    FONTS
+------------------------------------------------------------------------------------------------------------------------*/
+
+// font-family
+@font-face {
+	font-family: 'Shrikhand';
+	src: url('../../fonts/Shrikhand/Shrikhand-Regular.ttf');
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../../fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../../fonts/Roboto/Roboto-bold.ttf');
+}

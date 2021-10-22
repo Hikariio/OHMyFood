@@ -4,19 +4,29 @@
 ------------------------------------------------------------------------------------------------------------------------*/
 header {
     display: flex;
-    justify-content: center;
     height: 60px;
     border-bottom: 1px solid transparent;
     .conteneur_logo {
         display: flex;
         margin-top: 15px;
         height: 70%;
+        justify-content: center;
         &__image {
             height: 65%;
         }
     }
 }
-
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    NAV
+------------------------------------------------------------------------------------------------------------------------*/
+.nav__conteneur_icone{
+    display: flex;
+    justify-content: center;
+}
+.titrecentre{
+    display: flex;
+    justify-content: center;
+}
 /*------------------------------------------------------------------------------------------------------------------------
                                                     PRESENTATION
 ------------------------------------------------------------------------------------------------------------------------*/
@@ -318,6 +328,7 @@ header {
         border-bottom-right-radius: 25px;
         box-shadow: $shadow;
         padding-bottom: 10px;
+        margin-top: 1px;
     }
 
     .conteneur_presentation {
