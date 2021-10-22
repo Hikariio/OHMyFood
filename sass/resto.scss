@@ -99,6 +99,37 @@ header {
             align-items: center;
         }
     }
+    .fa {
+        background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+    }
+    .far{
+        position: absolute;
+        right: 5%;
+    }
+    input {
+        -webkit-appearance: none;
+        &:checked + label .fa {
+            z-index: 1;
+            opacity: 1;
+        }
+        &:checked + label .far {
+            z-index: -1;
+            opacity: 0;
+        }
+    }
+    .fa {
+        transition: all 1s ease;
+    }
+    .far {
+        transition: all 1s ease;
+    }
     #entrees {
         animation-delay: 0s;
     }
@@ -198,13 +229,13 @@ header {
                         width: 75%;
                     }
                 }
+
                 .menu__conteneur__plat__texte {
                     width: 70%;
                 }
                 .menu__conteneur__plat__choix__selec i{
                     transform: rotate(360deg);
                 }
-
             }
         }
     }
@@ -401,6 +432,12 @@ footer {
     .menu {
         &__titre {
             margin: 0 75% 0 -50px;
+        }
+        .far{
+            position: unset;
+        }
+        .fa{
+            position: unset;
         }
     }
     .conteneur_logo{

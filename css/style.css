@@ -741,6 +741,37 @@ header .conteneur_logo__image {
   justify-content: center;
   align-items: center;
 }
+.menu .fa {
+  background-image: radial-gradient(at 0% 5%, #ff79da, 55%, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+.menu .far {
+  position: absolute;
+  right: 5%;
+}
+.menu input {
+  -webkit-appearance: none;
+}
+.menu input:checked + label .fa {
+  z-index: 1;
+  opacity: 1;
+}
+.menu input:checked + label .far {
+  z-index: -1;
+  opacity: 0;
+}
+.menu .fa {
+  transition: all 1s ease;
+}
+.menu .far {
+  transition: all 1s ease;
+}
 .menu #entrees {
   animation-delay: 0s;
 }
@@ -1029,6 +1060,12 @@ footer div a {
   ------------------------------------------------------------------------------------------------------------------------*/
   .menu__titre {
     margin: 0 75% 0 -50px;
+  }
+  .menu .far {
+    position: unset;
+  }
+  .menu .fa {
+    position: unset;
   }
 
   .conteneur_logo {
