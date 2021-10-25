@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color: rgb(235, 235, 235);
 }
 
 p {
@@ -23,7 +23,7 @@ a {
 .conteneur_globale{
     opacity: 0;
     animation: 1s ease-in-out 2.5s 1 forwards opacityBody;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .lettre--1{
