@@ -943,7 +943,6 @@ footer div a {
   ------------------------------------------------------------------------------------------------------------------------*/
   header {
     flex-direction: row-reverse;
-    justify-content: unset;
   }
 
   .conteneur_retour {
