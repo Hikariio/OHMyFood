@@ -463,7 +463,7 @@ header .conteneur_logo__image {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(177, 177, 177);
+  background-color: gray;
 }
 
 p {
