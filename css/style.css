@@ -57,7 +57,7 @@ header .conteneur_logo__image {
                                                     PRESENTATION
 ------------------------------------------------------------------------------------------------------------------------*/
 .conteneur_presentation {
-  background-color: #dad8d8;
+  background-color: #f2f2f2;
 }
 
 .presentation {
@@ -112,7 +112,7 @@ header .conteneur_logo__image {
   margin: 10px auto 25px auto;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: #dad8d8;
+  background-color: #f2f2f2;
 }
 .conteneur_fonctionnement .etape_fonctionnement:hover {
   background-color: #e4d5f6;
@@ -260,7 +260,7 @@ header .conteneur_logo__image {
   .conteneur_main {
     display: flex;
     justify-content: space-between;
-    background-color: #dad8d8;
+    background-color: #f2f2f2;
     margin-top: -48px;
   }
 
@@ -668,6 +668,7 @@ header {
   height: 60px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-bottom: 1px solid transparent;
+  background-color: rgb(248, 248, 248);
 }
 header .conteneur_logo {
   display: flex;
@@ -689,7 +690,7 @@ header .conteneur_logo__image {
   align-items: center;
   width: 50px;
   font-size: 1.2em;
-  color: #444444;
+  color: #3d3d3d;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
@@ -711,14 +712,14 @@ header .conteneur_logo__image {
                                                     RESTAURANT
 ------------------------------------------------------------------------------------------------------------------------*/
 .section_restaurant {
-  background-color: #dad8d8;
+  background-color: #f2f2f2;
   padding-top: 2px;
 }
 
 .menu {
   margin-top: -75px;
   padding-bottom: 50px;
-  background-color: #dad8d8;
+  background-color: #f2f2f2;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   height: auto;
